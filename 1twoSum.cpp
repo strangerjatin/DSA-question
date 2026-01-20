@@ -17,14 +17,14 @@ class Solution{
                 map[nums[i]] = i;
             }
         }
-
+        return {}; 
     }
 };
 
 int main(){
     Solution sol;
-    vector<int> nums = {10,8,2,7,3,4,9,1};
-    int target = 10;
+    vector<int> nums = {2,7,11,15};
+    int target = 11;
     vector<int> result= sol.twoSum(nums, target);
     cout << "Indices:" << result[0] << "," << result[1] << endl;
     return 0;
